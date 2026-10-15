@@ -23,3 +23,4 @@ To strengthen my electronics design skills by building practical projects, docum
 📂 Explore my repositories to discover my PCB layouts, schematics, design files, and project documentation.
 
 **Let's connect, collaborate, and build something innovative!** 🚀
+Email-techworld.nexora@gmail.com
