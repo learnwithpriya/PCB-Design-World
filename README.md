@@ -24,3 +24,25 @@ To strengthen my electronics design skills by building practical projects, docum
 
 **Let's connect, collaborate, and build something innovative!** 🚀
 Email-techworld.nexora@gmail.com
+
+<!-- PORTFOLIO_PROJECTS_START -->
+
+### 1. 6-Axis ESP32 Servo Robot Controller
+
+![6-Axis ESP32 Servo Robot Controller Banner](projects/esp32-6axis-servo-controller/docs/banner.svg)
+
+An original 6-axis robot controller project using ESP32 and PCA9685 PWM driver. Designed to control six servo motors for a robotic arm prototype.
+
+**Tech:** ESP32, PCA9685, Servo Motors, I2C, Arduino Framework, PCB Design Documentation
+
+**Project Folder:** [projects/esp32-6axis-servo-controller](projects/esp32-6axis-servo-controller)
+
+**Full Report:** [REPORT.md](projects/esp32-6axis-servo-controller/REPORT.md)
+
+**Firmware:** [esp32_6axis_servo_controller.ino](projects/esp32-6axis-servo-controller/firmware/esp32_6axis_servo_controller/esp32_6axis_servo_controller.ino)
+
+**BOM:** [BOM.csv](projects/esp32-6axis-servo-controller/hardware/BOM.csv)
+
+**PCB Checklist:** [pcb_checklist.md](projects/esp32-6axis-servo-controller/hardware/pcb_checklist.md)
+
+<!-- PORTFOLIO_PROJECTS_END -->

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320">
+  <rect width="1200" height="320" fill="#0f172a"/>
+  <rect x="40" y="40" width="1120" height="240" rx="20" fill="#111827" stroke="#38bdf8" stroke-width="3"/>
+  <text x="80" y="105" font-family="Arial, sans-serif" font-size="42" font-weight="bold" fill="#f8fafc">PCB Design World</text>
+  <text x="80" y="155" font-family="Arial, sans-serif" font-size="30" fill="#38bdf8">6-Axis ESP32 Servo Robot Controller</text>
+  <text x="80" y="205" font-family="Arial, sans-serif" font-size="22" fill="#e2e8f0">Designed &amp; documented by Priya Saraswat</text>
+  <text x="80" y="245" font-family="Arial, sans-serif" font-size="18" fill="#94a3b8">Embedded Systems | Robotics | PCB Design | Portfolio Project</text>
+</svg>

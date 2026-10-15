@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <style>
+    .title { font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #111; }
+    .author { font-family: Arial, sans-serif; font-size: 16px; fill: #444; }
+    .box { fill: #fff; stroke: #333; stroke-width: 2; }
+    .pin { font-family: monospace; font-size: 13px; fill: #111; }
+    .power { stroke: #c0392b; stroke-width: 3; fill: none; }
+    .ground { stroke: #111; stroke-width: 3; fill: none; }
+    .signal { stroke: #2980b9; stroke-width: 2; fill: none; }
+    .label { font-family: Arial, sans-serif; font-size: 14px; fill: #111; }
+  </style>
+
+  <rect width="1200" height="720" fill="#fff"/>
+  <text x="600" y="40" class="title" text-anchor="middle">ESP32 + PCA9685 + 6 Servo Wiring Diagram</text>
+  <text x="600" y="65" class="author" text-anchor="middle">Priya Saraswat</text>
+
+  <rect x="80" y="120" width="220" height="220" rx="12" class="box"/>
+  <text x="190" y="150" class="label" text-anchor="middle">ESP32</text>
+  <text x="110" y="190" class="pin">3.3V</text>
+  <text x="110" y="220" class="pin">GND</text>
+  <text x="110" y="250" class="pin">GPIO21 / SDA</text>
+  <text x="110" y="280" class="pin">GPIO22 / SCL</text>
+  <text x="110" y="310" class="pin">USB Serial</text>
+
+  <rect x="450" y="120" width="250" height="260" rx="12" class="box"/>
+  <text x="575" y="150" class="label" text-anchor="middle">PCA9685</text>
+  <text x="480" y="190" class="pin">VDD = 3.3V</text>
+  <text x="480" y="220" class="pin">GND</text>
+  <text x="480" y="250" class="pin">SDA</text>
+  <text x="480" y="280" class="pin">SCL</text>
+  <text x="480" y="310" class="pin">OE -> GND</text>
+  <text x="480" y="340" class="pin">V+ = 5V/6V</text>
+
+  <rect x="820" y="90" width="260" height="360" rx="12" class="box"/>
+  <text x="950" y="120" class="label" text-anchor="middle">6 Servo Motors</text>
+  <text x="850" y="160" class="pin">CH0 -> Axis 1</text>
+  <text x="850" y="190" class="pin">CH1 -> Axis 2</text>
+  <text x="850" y="220" class="pin">CH2 -> Axis 3</text>
+  <text x="850" y="250" class="pin">CH3 -> Axis 4</text>
+  <text x="850" y="280" class="pin">CH4 -> Axis 5</text>
+  <text x="850" y="310" class="pin">CH5 -> Axis 6</text>
+  <text x="850" y="350" class="pin">Each servo: Signal, V+, GND</text>
+
+  <rect x="80" y="450" width="220" height="120" rx="12" class="box"/>
+  <text x="190" y="480" class="label" text-anchor="middle">5V/6V Servo Supply</text>
+  <text x="110" y="520" class="pin">+ V</text>
+  <text x="110" y="545" class="pin">GND</text>
+
+  <path class="signal" d="M300 250 L450 250"/>
+  <path class="signal" d="M300 280 L450 280"/>
+  <path class="power" d="M300 190 L450 190"/>
+  <path class="ground" d="M300 220 L450 220"/>
+
+  <path class="power" d="M300 520 L575 520 L575 380"/>
+  <path class="ground" d="M300 545 L575 545 L575 380"/>
+
+  <path class="signal" d="M700 200 L820 160"/>
+  <path class="signal" d="M700 220 L820 190"/>
+  <path class="signal" d="M700 240 L820 220"/>
+  <path class="signal" d="M700 260 L820 250"/>
+  <path class="signal" d="M700 280 L820 280"/>
+  <path class="signal" d="M700 300 L820 310"/>
+
+  <text x="600" y="650" class="author" text-anchor="middle">Note: Keep all GND connections common. Do not power servos from ESP32 pin.</text>
+</svg>

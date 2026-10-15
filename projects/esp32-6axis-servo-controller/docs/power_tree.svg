@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600">
+  <style>
+    .title { font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #111; }
+    .author { font-family: Arial, sans-serif; font-size: 16px; fill: #444; }
+    .box { fill: #fff; stroke: #333; stroke-width: 2; }
+    .label { font-family: Arial, sans-serif; font-size: 14px; fill: #111; text-anchor: middle; dominant-baseline: middle; }
+    .line { stroke: #333; stroke-width: 2; fill: none; }
+    .power { stroke: #c0392b; stroke-width: 3; fill: none; }
+  </style>
+
+  <rect width="1000" height="600" fill="#fff"/>
+  <text x="500" y="40" class="title" text-anchor="middle">Power Tree</text>
+  <text x="500" y="65" class="author" text-anchor="middle">Priya Saraswat</text>
+
+  <rect x="380" y="100" width="240" height="70" rx="10" class="box"/>
+  <text x="500" y="135" class="label">DC Input / USB 5V</text>
+
+  <rect x="150" y="240" width="240" height="70" rx="10" class="box"/>
+  <text x="270" y="265" class="label">5V / 6V Servo Rail</text>
+  <text x="270" y="285" class="label">High Current</text>
+
+  <rect x="610" y="240" width="240" height="70" rx="10" class="box"/>
+  <text x="730" y="265" class="label">3.3V Logic Rail</text>
+  <text x="730" y="285" class="label">Low Current</text>
+
+  <rect x="80" y="400" width="180" height="60" rx="10" class="box"/>
+  <text x="170" y="430" class="label">Servo Motors</text>
+
+  <rect x="300" y="400" width="180" height="60" rx="10" class="box"/>
+  <text x="390" y="430" class="label">PCA9685 V+</text>
+
+  <rect x="620" y="400" width="160" height="60" rx="10" class="box"/>
+  <text x="700" y="430" class="label">ESP32</text>
+
+  <rect x="820" y="400" width="120" height="60" rx="10" class="box"/>
+  <text x="880" y="430" class="label">PCA9685 VDD</text>
+
+  <path class="power" d="M430 170 L270 240"/>
+  <path class="line" d="M570 170 L730 240"/>
+
+  <path class="power" d="M220 310 L170 400"/>
+  <path class="power" d="M320 310 L390 400"/>
+
+  <path class="line" d="M680 310 L700 400"/>
+  <path class="line" d="M780 310 L880 400"/>
+
+  <text x="500" y="540" class="author" text-anchor="middle">Separate servo power from logic power. Use common ground.</text>
+</svg>

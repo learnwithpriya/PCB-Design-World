@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="500" viewBox="0 0 1500 500">
+  <rect width="1500" height="500" fill="#0f172a"/>
+  <rect x="60" y="70" width="1380" height="360" rx="28" fill="#111827" stroke="#38bdf8" stroke-width="4"/>
+  <text x="120" y="170" font-family="Arial, sans-serif" font-size="58" font-weight="bold" fill="#f8fafc">Priya Saraswat</text>
+  <text x="120" y="235" font-family="Arial, sans-serif" font-size="34" fill="#38bdf8">Electronics Engineer | PCB Design Engineer | Embedded Systems Enthusiast</text>
+  <text x="120" y="300" font-family="Arial, sans-serif" font-size="26" fill="#e2e8f0">PCB Design World - documenting practical electronics, robotics, and embedded projects.</text>
+  <text x="120" y="355" font-family="Arial, sans-serif" font-size="22" fill="#94a3b8">Skills: Altium Designer, KiCad, OrCAD, LTspice, Proteus, PSpice, Arduino, ESP32, Embedded C</text>
+</svg>

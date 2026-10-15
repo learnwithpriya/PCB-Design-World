@@ -1,0 +1,16 @@
+Item,Qty,Part,Purpose,Notes
+1,1,ESP32 Dev Module or ESP32-WROOM-32,Main controller,Use 3.3V logic supply
+2,1,PCA9685 PWM Driver IC/Module,6-axis servo PWM output,I2C address 0x40
+3,6,MG996R or DS3218 servo,Robot arm axes,Choose based on torque requirement
+4,1,5V/6V 8A to 10A power supply,Servo power,Do not power servos from ESP32 USB
+5,1,3.3V regulator or buck converter,Logic power,AMS1117-3.3 or MP1584 adjustable
+6,2,4.7k resistor,I2C pull-ups,For SDA and SCL
+7,10,100nF ceramic capacitor,Decoupling,Near ICs and servo connectors
+8,1,470uF to 1000uF electrolytic capacitor,Servo rail bulk filter,Check voltage rating
+9,6,3-pin servo connector or terminal,Servo output,Label Axis 1 to Axis 6
+10,1,DC power jack or screw terminal,Power input,Add polarity marking
+11,1,Push button,E-stop or reset,Optional
+12,1,LED + resistor,Status indicator,Optional
+13,1,PCB,Controller board,Design in KiCad/EasyEDA/JLCPCB
+14,1,Fuse holder or polyfuse,Overcurrent protection,Recommended
+15,1,Reverse polarity diode or PFET,Polarity protection,Recommended
