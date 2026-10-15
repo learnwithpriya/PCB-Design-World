@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <style>
+    .title { font: 700 26px Arial, sans-serif; fill: #0f172a; }
+    .sub { font: 16px Arial, sans-serif; fill: #475569; }
+    .board { fill: #14532d; stroke: #052e16; stroke-width: 6; }
+    .silkscreen { fill: none; stroke: #f8fafc; stroke-width: 2; }
+    .comp { fill: #111827; stroke: #e5e7eb; stroke-width: 2; }
+    .chip { fill: #1f2937; stroke: #9ca3af; stroke-width: 2; }
+    .pad { fill: #fbbf24; stroke: #92400e; stroke-width: 1.5; }
+    .hole { fill: #f8fafc; stroke: #cbd5e1; stroke-width: 3; }
+    .txt { font: 13px Arial, sans-serif; fill: #f8fafc; text-anchor: middle; }
+    .label { font: 12px Arial, sans-serif; fill: #334155; }
+    .power { stroke: #ef4444; stroke-width: 5; fill: none; opacity: 0.85; }
+    .gnd { stroke: #111827; stroke-width: 5; fill: none; opacity: 0.75; }
+    .sig { stroke: #38bdf8; stroke-width: 3; fill: none; }
+    .note { font: 14px Arial, sans-serif; fill: #64748b; text-anchor: middle; }
+  </style>
+
+  <rect width="1200" height="760" fill="#f8fafc" />
+  <text x="600" y="42" class="title" text-anchor="middle">6-Axis ESP32 Servo Controller — 2D PCB Top View</text>
+  <text x="600" y="68" class="sub" text-anchor="middle">Conceptual layout by Priya Saraswat | Not a manufacturing file</text>
+
+  <rect x="70" y="95" width="1060" height="560" rx="28" class="board" />
+  <rect x="86" y="111" width="1028" height="528" rx="20" class="silkscreen" stroke-dasharray="8 6" opacity="0.45" />
+
+  <circle cx="110" cy="135" r="14" class="hole" />
+  <circle cx="1090" cy="135" r="14" class="hole" />
+  <circle cx="110" cy="615" r="14" class="hole" />
+  <circle cx="1090" cy="615" r="14" class="hole" />
+
+  <!-- ESP32 -->
+  <rect x="125" y="160" width="260" height="150" rx="10" class="comp" />
+  <rect x="138" y="174" width="78" height="122" rx="6" fill="#92400e" opacity="0.75" />
+  <text x="177" y="240" class="txt">ANT</text>
+  <rect x="235" y="190" width="125" height="90" rx="8" class="chip" />
+  <text x="297" y="228" class="txt">ESP32</text>
+  <text x="297" y="248" class="txt">I2C / UART</text>
+  <text x="255" y="332" class="txt" text-anchor="start">ESP32 Dev Module</text>
+
+  <!-- PCA9685 -->
+  <rect x="455" y="185" width="230" height="140" rx="10" class="comp" />
+  <rect x="505" y="215" width="130" height="80" rx="8" class="chip" />
+  <text x="570" y="248" class="txt">PCA9685</text>
+  <text x="570" y="268" class="txt">16-ch PWM</text>
+  <text x="475" y="350" class="txt" text-anchor="start">Servo Driver Section</text>
+
+  <!-- 3.3V regulator -->
+  <rect x="135" y="375" width="160" height="95" rx="10" class="comp" />
+  <text x="215" y="415" class="txt">3.3V</text>
+  <text x="215" y="435" class="txt">REG</text>
+
+  <!-- capacitors -->
+  <rect x="330" y="385" width="45" height="28" rx="6" class="comp" />
+  <text x="352" y="404" class="txt">C1</text>
+  <rect x="330" y="425" width="45" height="28" rx="6" class="comp" />
+  <text x="352" y="444" class="txt">C2</text>
+  <rect x="710" y="230" width="45" height="28" rx="6" class="comp" />
+  <text x="732" y="249" class="txt">C3</text>
+  <rect x="710" y="270" width="45" height="28" rx="6" class="comp" />
+  <text x="732" y="289" class="txt">C4</text>
+
+  <!-- bulk capacitor -->
+  <circle cx="650" cy="470" r="42" class="comp" />
+  <text x="650" y="466" class="txt">470uF</text>
+  <text x="650" y="484" class="txt">BULK</text>
+
+  <!-- DC jack -->
+  <rect x="105" y="510" width="170" height="95" rx="12" class="comp" />
+  <circle cx="150" cy="557" r="22" fill="#0b1220" stroke="#e5e7eb" stroke-width="2" />
+  <circle cx="150" cy="557" r="8" fill="#fbbf24" />
+  <text x="215" y="548" class="txt">DC IN</text>
+  <text x="215" y="568" class="txt">5V/6V</text>
+
+  <!-- E-stop -->
+  <circle cx="365" cy="555" r="38" fill="#dc2626" stroke="#fecaca" stroke-width="4" />
+  <text x="365" y="552" class="txt">E-STOP</text>
+  <text x="365" y="570" class="txt">SAFE</text>
+
+  <!-- status LED -->
+  <circle cx="470" cy="555" r="14" fill="#22c55e" stroke="#bbf7d0" stroke-width="3" />
+  <text x="470" y="590" class="txt">STATUS</text>
+
+  <!-- power and ground buses -->
+  <path class="power" d="M1035 135 V590" />
+  <path class="gnd" d="M1050 135 V590" />
+
+  <!-- servo connectors -->
+  <!-- Axis 1 -->
+  <rect x="790" y="145" width="260" height="52" rx="8" class="comp" />
+  <circle cx="825" cy="171" r="8" class="pad" />
+  <circle cx="860" cy="171" r="8" class="pad" />
+  <circle cx="895" cy="171" r="8" class="pad" />
+  <text x="1000" y="176" class="txt">AXIS 1</text>
+  <path class="sig" d="M685 210 C735 210 760 171 817 171" />
+  <path class="power" d="M1035 171 H860" />
+  <path class="gnd" d="M1050 171 H895" />
+
+  <!-- Axis 2 -->
+  <rect x="790" y="220" width="260" height="52" rx="8" class="comp" />
+  <circle cx="825" cy="246" r="8" class="pad" />
+  <circle cx="860" cy="246" r="8" class="pad" />
+  <circle cx="895" cy="246" r="8" class="pad" />
+  <text x="1000" y="251" class="txt">AXIS 2</text>
+  <path class="sig" d="M685 225 C735 225 760 246 817 246" />
+  <path class="power" d="M1035 246 H860" />
+  <path class="gnd" d="M1050 246 H895" />
+
+  <!-- Axis 3 -->
+  <rect x="790" y="295" width="260" height="52" rx="8" class="comp" />
+  <circle cx="825" cy="321" r="8" class="pad" />
+  <circle cx="860" cy="321" r="8" class="pad" />
+  <circle cx="895" cy="321" r="8" class="pad" />
+  <text x="1000" y="326" class="txt">AXIS 3</text>
+  <path class="sig" d="M685 240 C735 240 760 321 817 321" />
+  <path class="power" d="M1035 321 H860" />
+  <path class="gnd" d="M1050 321 H895" />
+
+  <!-- Axis 4 -->
+  <rect x="790" y="370" width="260" height="52" rx="8" class="comp" />
+  <circle cx="825" cy="396" r="8" class="pad" />
+  <circle cx="860" cy="396" r="8" class="pad" />
+  <circle cx="895" cy="396" r="8" class="pad" />
+  <text x="1000" y="401" class="txt">AXIS 4</text>
+  <path class="sig" d="M685 255 C735 255 760 396 817 396" />
+  <path class="power" d="M1035 396 H860" />
+  <path class="gnd" d="M1050 396 H895" />
+
+  <!-- Axis 5 -->
+  <rect x="790" y="445" width="260" height="52" rx="8" class="comp" />
+  <circle cx="825" cy="471" r="8" class="pad" />
+  <circle cx="860" cy="471" r="8" class="pad" />
+  <circle cx="895" cy="471" r="8" class="pad" />
+  <text x="1000" y="476" class="txt">AXIS 5</text>
+  <path class="sig" d="M685 270 C735 270 760 471 817 471" />
+  <path class="power" d="M1035 471 H860" />
+  <path class="gnd" d="M1050 471 H895" />
+
+  <!-- Axis 6 -->
+  <rect x="790" y="520" width="260" height="52" rx="8" class="comp" />
+  <circle cx="825" cy="546" r="8" class="pad" />
+  <circle cx="860" cy="546" r="8" class="pad" />
+  <circle cx="895" cy="546" r="8" class="pad" />
+  <text x="1000" y="551" class="txt">AXIS 6</text>
+  <path class="sig" d="M685 285 C735 285 760 546 817 546" />
+  <path class="power" d="M1035 546 H860" />
+  <path class="gnd" d="M1050 546 H895" />
+
+  <!-- legend -->
+  <rect x="90" y="680" width="18" height="12" fill="#ef4444" />
+  <text x="115" y="690" class="label">Servo power</text>
+  <rect x="230" y="680" width="18" height="12" fill="#111827" />
+  <text x="255" y="690" class="label">Ground</text>
+  <rect x="350" y="680" width="18" height="12" fill="#38bdf8" />
+  <text x="375" y="690" class="label">PWM signal</text>
+  <text x="1090" y="690" class="label" text-anchor="end">Priya Saraswat</text>
+  <text x="600" y="735" class="note">Conceptual 2D PCB artwork for portfolio documentation. Real manufacturing requires schematic, layout, DRC, and Gerber files.</text>
+</svg>

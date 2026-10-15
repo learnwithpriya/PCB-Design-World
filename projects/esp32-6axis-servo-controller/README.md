@@ -190,3 +190,15 @@ REPORT.md   Full project report
 This project was developed as an original ESP32 + PCA9685 servo controller design. Public robotics controller examples were used only as general background reference. The architecture, documentation, firmware structure, and PCB design checklist in this repository are my own work unless otherwise credited.
 
 **Designed and documented by Priya Saraswat.**
+
+## PCB Concept Images
+
+### 2D PCB Top View
+
+![2D PCB Top View](docs/pcb_2d_top.svg)
+
+### 3D Isometric Render
+
+![3D Isometric PCB Render](docs/pcb_3d_isometric.svg)
+
+> These are conceptual portfolio visuals. Manufacturing files should be generated from KiCad/EasyEDA/Altium after schematic, layout, and DRC.

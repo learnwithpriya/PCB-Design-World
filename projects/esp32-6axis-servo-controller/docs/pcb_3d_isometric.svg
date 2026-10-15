@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <style>
+    .title { font: 700 26px Arial, sans-serif; fill: #0f172a; }
+    .sub { font: 16px Arial, sans-serif; fill: #475569; }
+    .label { font: 14px Arial, sans-serif; fill: #334155; }
+    .note { font: 14px Arial, sans-serif; fill: #64748b; text-anchor: middle; }
+    .lead { stroke: #475569; stroke-width: 2; fill: none; }
+  </style>
+
+  <rect width="1200" height="760" fill="#f8fafc" />
+
+  <text x="600" y="42" class="title" text-anchor="middle">6-Axis ESP32 Servo Controller — 3D Isometric PCB Render</text>
+  <text x="600" y="68" class="sub" text-anchor="middle">Conceptual 3D view by Priya Saraswat | Portfolio illustration</text>
+
+  <!-- shadow -->
+  <ellipse cx="620" cy="625" rx="430" ry="70" fill="#0f172a" opacity="0.12" />
+
+  <!-- PCB board -->
+  <polygon points="200,430 720,190 1040,350 520,590" fill="#166534" stroke="#052e16" stroke-width="5" />
+  <polygon points="200,430 520,590 520,620 200,460" fill="#14532d" stroke="#052e16" stroke-width="4" />
+  <polygon points="520,590 1040,350 1040,380 520,620" fill="#0f3f22" stroke="#052e16" stroke-width="4" />
+
+  <!-- silkscreen border -->
+  <polygon points="230,430 715,205 1010,350 525,570" fill="none" stroke="#f8fafc" stroke-width="2" stroke-dasharray="8 6" opacity="0.55" />
+
+  <!-- mounting holes -->
+  <ellipse cx="235" cy="428" rx="12" ry="7" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2" />
+  <ellipse cx="715" cy="205" rx="12" ry="7" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2" />
+  <ellipse cx="1008" cy="350" rx="12" ry="7" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2" />
+  <ellipse cx="515" cy="572" rx="12" ry="7" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2" />
+
+  <!-- ESP32 module -->
+  <polygon points="300,405 520,315 620,365 400,455" fill="#111827" stroke="#e5e7eb" stroke-width="2" />
+  <polygon points="300,405 400,455 400,485 300,435" fill="#030712" stroke="#e5e7eb" stroke-width="2" />
+  <polygon points="400,455 620,365 620,395 400,485" fill="#1f2937" stroke="#e5e7eb" stroke-width="2" />
+  <polygon points="315,403 390,371 430,391 355,423" fill="#92400e" opacity="0.85" />
+
+  <!-- PCA9685 -->
+  <polygon points="560,350 760,265 850,310 650,395" fill="#111827" stroke="#e5e7eb" stroke-width="2" />
+  <polygon points="560,350 650,395 650,417 560,372" fill="#030712" stroke="#e5e7eb" stroke-width="2" />
+  <polygon points="650,395 850,310 850,332 650,417" fill="#1f2937" stroke="#e5e7eb" stroke-width="2" />
+  <polygon points="590,348 735,287 790,314 645,375" fill="#1f2937" stroke="#9ca3af" stroke-width="2" />
+
+  <!-- servo connector bank -->
+  <polygon points="760,430 940,350 1000,380 820,460" fill="#111827" stroke="#e5e7eb" stroke-width="2" />
+  <polygon points="760,430 820,460 820,482 760,452" fill="#030712" stroke="#e5e7eb" stroke-width="2" />
+  <polygon points="820,460 1000,380 1000,402 820,482" fill="#1f2937" stroke="#e5e7eb" stroke-width="2" />
+
+  <!-- decorative servo pins -->
+  <ellipse cx="790" cy="425" rx="7" ry="4" fill="#fbbf24" stroke="#92400e" stroke-width="1" />
+  <ellipse cx="820" cy="412" rx="7" ry="4" fill="#fbbf24" stroke="#92400e" stroke-width="1" />
+  <ellipse cx="850" cy="399" rx="7" ry="4" fill="#fbbf24" stroke="#92400e" stroke-width="1" />
+  <ellipse cx="880" cy="386" rx="7" ry="4" fill="#fbbf24" stroke="#92400e" stroke-width="1" />
+  <ellipse cx="910" cy="373" rx="7" ry="4" fill="#fbbf24" stroke="#92400e" stroke-width="1" />
+  <ellipse cx="940" cy="360" rx="7" ry="4" fill="#fbbf24" stroke="#92400e" stroke-width="1" />
+
+  <ellipse cx="805" cy="445" rx="7" ry="4" fill="#fbbf24" stroke="#92400e" stroke-width="1" />
+  <ellipse cx="835" cy="432" rx="7" ry="4" fill="#fbbf24" stroke="#92400e" stroke-width="1" />
+  <ellipse cx="865" cy="419" rx="7" ry="4" fill="#fbbf24" stroke="#92400e" stroke-width="1" />
+  <ellipse cx="895" cy="406" rx="7" ry="4" fill="#fbbf24" stroke="#92400e" stroke-width="1" />
+  <ellipse cx="925" cy="393" rx="7" ry="4" fill="#fbbf24" stroke="#92400e" stroke-width="1" />
+  <ellipse cx="955" cy="380" rx="7" ry="4" fill="#fbbf24" stroke="#92400e" stroke-width="1" />
+
+  <!-- DC jack -->
+  <polygon points="230,490 330,450 380,475 280,515" fill="#111827" stroke="#e5e7eb" stroke-width="2" />
+  <polygon points="230,490 280,515 280,545 230,520" fill="#030712" stroke="#e5e7eb" stroke-width="2" />
+  <polygon points="280,515 380,475 380,505 280,545" fill="#1f2937" stroke="#e5e7eb" stroke-width="2" />
+  <ellipse cx="265" cy="492" rx="18" ry="10" fill="#0b1220" stroke="#e5e7eb" stroke-width="2" />
+  <ellipse cx="265" cy="492" rx="7" ry="4" fill="#fbbf24" />
+
+  <!-- 3.3V regulator -->
+  <polygon points="390,500 470,465 510,485 430,520" fill="#111827" stroke="#e5e7eb" stroke-width="2" />
+  <polygon points="390,500 430,520 430,540 390,520" fill="#030712" stroke="#e5e7eb" stroke-width="2" />
+  <polygon points="430,520 510,485 510,505 430,540" fill="#1f2937" stroke="#e5e7eb" stroke-width="2" />
+
+  <!-- bulk capacitor -->
+  <ellipse cx="620" cy="470" rx="35" ry="18" fill="#111827" stroke="#e5e7eb" stroke-width="2" />
+  <ellipse cx="620" cy="460" rx="35" ry="18" fill="#1f2937" stroke="#e5e7eb" stroke-width="2" />
+  <ellipse cx="620" cy="460" rx="20" ry="10" fill="#374151" stroke="#9ca3af" stroke-width="1" />
+
+  <!-- E-stop button -->
+  <ellipse cx="330" cy="555" rx="30" ry="15" fill="#7f1d1d" />
+  <ellipse cx="330" cy="545" rx="30" ry="15" fill="#dc2626" stroke="#fecaca" stroke-width="2" />
+
+  <!-- status LED -->
+  <ellipse cx="470" cy="540" rx="12" ry="7" fill="#22c55e" stroke="#bbf7d0" stroke-width="2" />
+
+  <!-- callout lines -->
+  <g class="lead">
+    <polyline points="430,380 260,230 170,230" />
+    <polyline points="700,330 880,170 970,170" />
+    <polyline points="880,405 1070,280 1140,280" />
+    <polyline points="280,500 130,610 70,610" />
+    <polyline points="450,500 360,650 270,650" />
+    <polyline points="330,545 220,690 130,690" />
+    <polyline points="620,460 680,650 760,650" />
+    <polyline points="470,540 520,690 600,690" />
+  </g>
+
+  <!-- callout labels -->
+  <text x="165" y="225" class="label" text-anchor="end">ESP32 controller</text>
+  <text x="975" y="165" class="label">PCA9685 PWM driver</text>
+  <text x="1145" y="275" class="label">6-axis servo outputs</text>
+  <text x="65" y="605" class="label" text-anchor="end">DC power input</text>
+  <text x="265" y="645" class="label" text-anchor="end">3.3V regulator</text>
+  <text x="125" y="685" class="label" text-anchor="end">E-stop / safety</text>
+  <text x="765" y="645" class="label">Bulk capacitor</text>
+  <text x="605" y="685" class="label">Status LED</text>
+
+  <text x="600" y="735" class="note">Conceptual 3D isometric PCB illustration. For production 3D models, use KiCad 3D Viewer, Fusion 360, or Altium after final layout.</text>
+</svg>
